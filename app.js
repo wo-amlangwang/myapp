@@ -11,7 +11,7 @@ var callme = function(abbre){
 	var ps = new Promise(function(resolved,reject){
 		var url = 'http://api.purdue.io/odata/Courses?$filter=Subject/Abbreviation eq \''+ abbre +'\'&$orderby=Number asc';
 		var filename = './' + abbre + '.json';
-		console.log(filename);
+		//console.log(filename);
 		request({url : url,
 				 json : true},function(err,response,body){
 			if(!err && response.statusCode === 200){
@@ -30,7 +30,7 @@ var callme = function(abbre){
 
 
 for (var a in abb.abbrevation){
-	console.log(abb.abbrevation[a]);
+	//console.log(abb.abbrevation[a]);
 	callme(abb.abbrevation[a]).then(function(msg){
 		console.log(success(msg  + ' success!\n'));
 	}).catch(function(err){
