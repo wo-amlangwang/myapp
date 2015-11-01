@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "openurl": "^1.1.0"
+    "chalk": "^1.1.1",
+    "openurl": "^1.1.0",
+    "promise": "^7.0.4"
   }
 }
