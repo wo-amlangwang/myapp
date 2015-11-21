@@ -11,6 +11,7 @@
   "dependencies": {
     "chalk": "^1.1.1",
     "openurl": "^1.1.0",
-    "promise": "^7.0.4"
+    "promise": "^7.0.4",
+    "q": "^1.4.1"
   }
 }
