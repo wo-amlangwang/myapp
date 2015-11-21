@@ -43,7 +43,7 @@ var getabbrevation = function() {
 getabbrevation().then(function (argument) {
 	//console.log(argument.value);
 	for(var a in argument.value){
-		console.log(a);
+		//console.log(a);
 		callme(argument.value[a]['Abbreviation']).then(function(msg){
 			console.log(success(msg  + ' success!\n'));
 		}).catch(function(err){
