@@ -40,8 +40,19 @@ var getabbrevation = function() {
 }
 
 
+getabbrevation().then(function(argument){
+	delete argument['@odata.context'];
+	argument['results'] = argument['value'];
+	delete argument['value'];
+	fs.writeFile('./abbrevation.json', JSON.stringify(argument),function(){
+			console.log(success('done\n'));
+			
+	});
+});
 
 
+
+/*
 getabbrevation().then(function (argument) {
 	//console.log(argument.value);
 	for(var a in argument.value){
